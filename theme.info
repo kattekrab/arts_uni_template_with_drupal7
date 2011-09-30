@@ -1,0 +1,14 @@
+name = uni theme
+description = uni theme
+package = Core
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = style.css
+
+regions[homepage1]     	= Homepage1
+regions[homepage2]     	= Homepage2
+regions[dropdown]     	= Dropdown
+regions[help]           = Help
+regions[content]        = Content
+regions[navigation]     = Navigation
+regions[aside]  		= Aside

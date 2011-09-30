@@ -1,0 +1,6 @@
+/*  Used to manage your own custom styles  */
+
+.front #admin-menu, .not-front #admin-menu {
+z-index: 1001;
+}
+

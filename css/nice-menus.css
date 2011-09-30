@@ -1,0 +1,308 @@
+/* $Id: nice_menus.css,v 1.29 2010/10/26 03:43:17 vordude Exp $ */
+/*
+  This file contains the basic logic for nice menus, and should not be
+  edited.  To customize the menus, it's recommended to create a custom CSS
+  file using nice_menus_default.css as a template, then configure the module
+  to use your custom CSS file (this is done in the global settings tab of
+  the theme administration.)
+*/
+
+
+
+
+
+/*
+ * NICE MENUS - GENERIC
+ */
+
+.block-nice_menus {
+  line-height: normal;
+  z-index: 602;
+}
+
+ul.nice-menu,
+ul.nice-menu ul {
+  z-index: 603;
+  position: relative;
+}
+
+ul.nice-menu li {
+  position: relative;
+}
+
+ul.nice-menu a {
+  display: block;
+}
+
+ul.nice-menu a {
+  text-decoration: none; }
+  ul.nice-menu a:hover, ul.nice-menu a:focus {
+    -webkit-transition: color 150ms linear;
+    -moz-transition: color 150ms linear;
+    transition: color 150ms linear;
+    color: #cc3333; }
+
+ul.nice-menu ul {
+  position: absolute;
+  visibility: hidden;
+}
+
+ul.nice-menu li.over ul {
+  visibility: visible;
+}
+
+ul.nice-menu ul li {
+  display: block;
+}
+
+ul.nice-menu:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+ul.nice-menu li:hover ul,
+ul.nice-menu li.menuparent li:hover ul,
+ul.nice-menu li.menuparent li.menuparent li:hover ul,
+ul.nice-menu li.menuparent li.menuparent li.menuparent li:hover ul,
+ul.nice-menu li.over ul,
+ul.nice-menu li.menuparent li.over ul,
+ul.nice-menu li.menuparent li.menuparent li.over ul,
+ul.nice-menu li.menuparent li.menuparent li.menuparent li.over ul {
+  visibility: visible;
+}
+
+ul.nice-menu li:hover ul ul,
+ul.nice-menu li:hover ul ul ul,
+ul.nice-menu li:hover li:hover ul ul,
+ul.nice-menu li:hover li:hover ul ul ul,
+ul.nice-menu li:hover li:hover li:hover ul ul,
+ul.nice-menu li:hover li:hover li:hover ul ul ul,
+ul.nice-menu li.over ul ul,
+ul.nice-menu li.over ul ul ul,
+ul.nice-menu li.over li.over ul ul,
+ul.nice-menu li.over li.over ul ul ul,
+ul.nice-menu li.over li.over li.over ul ul,
+ul.nice-menu li.over li.over li.over ul ul ul {
+  visibility: hidden;
+}
+
+ul.nice-menu li.menuparent ul {
+  overflow: visible !important;
+  /* overflow: hidden; */
+}
+
+ul.nice-menu li.menuparent ul iframe {
+  display: none;
+  display/**/: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: mask();
+  width: 20px;
+  height: 20px;
+}
+
+
+/*
+ * NICE MENUS - UNIMELB DROPDOWN REGION - ADJUSTMENTS
+ */
+
+.front .dropdown {
+margin: 0 0 10px 15px !important;
+}
+
+.front .header {
+margin-bottom: 0;
+}
+
+.not-front .main {
+padding-top: 20px !important;
+}
+
+
+
+/*
+ * NICE MENUS - UNIMELB DROPDOWN REGION
+ */
+
+
+.dropdown ul.nice-menu, .dropdown ul.nice-menu-down, .dropdown ul.nice-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 0px solid transparent;
+  float: left; /* LTR */
+  border: 0;
+}
+
+.dropdown ul.nice-menu li, .dropdown ul.nice-menu-down li {
+  border: 0px solid transparent;
+  border-top: 0;
+  border-left: 0;
+  float: left; 
+  background-color: #F2F2F2;
+  margin: 0;
+}
+
+.dropdown ul.nice-menu ul, .dropdown ul.nice-menu-down ul {
+  top: 30px;
+  left: 0px;
+  border: 0;
+  border-top: 0px solid transparent;
+  margin-right: 0; 
+}
+
+.dropdown ul.nice-menu ul li, .dropdown ul.nice-menu-down ul li, .dropdown ul.nice-menu-down li li  {
+  width: 16em;
+  clear: both;
+  border-top: 0;
+  border-left: 0px solid transparent;
+  margin-right: 0px;
+  background: #F2F2F2; /* LTR */
+}
+
+.dropdown ul.nice-menu-down li ul li ul {
+  left: 16em; /* LTR */
+  top: 0px;
+}
+
+.dropdown ul.nice-menu a {
+  padding: 0 10px 0 10px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.dropdown ul.nice-menu-down .menuparent a {
+  padding-right: 10px; /* LTR */
+}
+
+.dropdown ul.nice-menu-down li.menuparent {
+  background: #F2F2F2; /* LTR */
+}
+
+.dropdown ul.nice-menu-down li:hover {
+  background: #F2F2F2; /* LTR */
+}
+
+.dropdown ul.nice-menu-down li.menuparent:hover {
+  background: #F2F2F2; /* LTR */
+}
+
+.dropdown ul.nice-menu-down li li.menuparent {
+  background: #F2F2F2; /* LTR */
+}
+
+.dropdown ul.nice-menu-down li li:hover {
+  background: #F2F2F2; /* LTR */
+}
+
+.dropdown ul.nice-menu-down li li.menuparent:hover {
+  background: #F2F2F2; /* LTR */
+}
+
+
+
+
+
+/*
+ * NICE MENUS - #HELP REGION (SEVEN THEME) - ADJUSTMENTS
+ */
+
+.logged-in #help, 
+.logged-in .region-help,
+.logged-in .region-help #block-system-help,
+.logged-in .region-content {
+width: 100%;
+float: none;
+clear: both;
+display: block;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+
+/*
+ * NICE MENUS - #HELP REGION (SEVEN THEME)
+ */
+
+#help ul.nice-menu, #help ul.nice-menu-down, #help ul.nice-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 0px solid #ccc;
+  float: left; /* LTR */
+  border: 0;
+}
+
+#help ul.nice-menu li, #help ul.nice-menu-down li {
+  border: 0px solid #ccc;
+  border-top: 0;
+  border-left: 0;
+  float: left; 
+  background-color: #eee;
+  margin: 0;
+}
+
+#help ul.nice-menu ul, #help ul.nice-menu-down ul {
+  top: 30px;
+  left: 0px;
+  border: 0;
+  border-top: 0px solid #ccc;
+  margin-right: 0; 
+}
+
+#help ul.nice-menu ul li, #help ul.nice-menu-down ul li, #help ul.nice-menu-down li li  {
+  width: 16em;
+  clear: both;
+  border-top: 0;
+  border-left: 0px solid #ccc;
+  margin-right: 0px;
+}
+
+#help ul.nice-menu-down li ul li ul {
+  left: 16em; /* LTR */
+  top: 0px;
+}
+
+#help ul.nice-menu a {
+  padding: 0 10px 0 10px;
+  height: 30px;
+  line-height: 30px;
+}
+
+#help ul.nice-menu-down .menuparent a {
+  padding-right: 10px; /* LTR */
+}
+
+#help ul.nice-menu-down li.menuparent {
+  background: #eee; /* LTR */
+}
+
+#help ul.nice-menu-down li:hover {
+  background: #ccc; /* LTR */
+}
+
+#help ul.nice-menu-down li.menuparent:hover {
+  background: #ccc; /* LTR */
+}
+
+#help ul.nice-menu-down li li.menuparent {
+  background: #eee; /* LTR */
+}
+
+#help ul.nice-menu-down li li:hover {
+  background: #ccc; /* LTR */
+}
+
+#help ul.nice-menu-down li li.menuparent:hover {
+  background: #ccc; /* LTR */
+}
+
+
+
+
+
