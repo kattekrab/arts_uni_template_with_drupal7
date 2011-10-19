@@ -1,50 +1,3 @@
-<?php
-// $Id: d7unimelb2011.info,v 1.0 2011/06/22 00:00:00 media insights Exp $
-
-/*
-
-generic variables:
-
-$attributes_array
-$title_attributes_array
-$content_attributes_array
-$classes_array
- Array of html class attribute values. It is flattened into a string within the variable $classes. 
-$title_prefix
- An array containing additional output populated by modules, intended to be displayed in front of the main title tag that appears in the template.
-$title_suffix
- An array containing additional output populated by modules, intended to be displayed after the main title tag that appears in the template.
-$id
- The placement of the template. Each time the template is used, it is incremented by one.
-$zebra
- Either "odd" or "even". Alternate each time the template is used.
-$directory
- The theme path relative to the base install. example: "sites/all/themes/myTheme"
-$is_admin
- Boolean returns TRUE when the visitor is a site administrator.
-$is_front
- Boolean returns TRUE when viewing the front page of the site.
-$logged_in
- Boolean returns TRUE when the visitor is a member of the site, logged in and authenticated.
-$db_is_active
- Boolean returns TRUE when the database is active and running. This is only useful for theming in maintenance mode where the site may run into database problems.
-$user
- The user object containing data for the current visitor. Some of the data contained here may not be safe. Be sure to pass potentially dangerous strings through check_plain. 
-
-regions:
-
-// regions[homepage1]    = Homepage1
-// regions[homepage2]    = Homepage2
-// regions[dropdown]    = Dropdown
-// regions[help]        = Help
-// regions[content]     = Content
-// regions[navigation]  = Navigation
-// regions[aside]  		= Aside
-
-*/
-
-?>
-
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -98,15 +51,15 @@ regions:
 	
 	<!-- GLOBAL RESOURCES -->
 	<!-- DO NOT CHANGE -->  
-	<link rel="stylesheet" href="http://brand.unimelb.edu.au/web-templates/1-0/css/complete.css">  
-	<script src="http://brand.unimelb.edu.au/web-templates/1-0/js/complete.js"></script>
+	<link rel="stylesheet" href="http://brand.unimelb.edu.au/web-templates/EDGE/css/complete.css">  
+	<script src="http://brand.unimelb.edu.au/web-templates/EDGE/js/complete.js"></script>
 	<script src="http://brand.unimelb.edu.au/global-header/js/injection.js"></script>
 	<!-- /GLOBAL RESOURCES -->
 	
 	<?php 
 		global $base_url;
 	?>
-	<link rel="stylesheet" href="<?php echo $base_url ?>/sites/all/css/themes/uni-theme/custom.css" media="screen">
+	<link rel="stylesheet" href="<?php echo $base_url ?>/sites/all/themes/unitheme/css/custom.css" media="screen">
 	<!-- end Unimelb head -->
 
 </head>

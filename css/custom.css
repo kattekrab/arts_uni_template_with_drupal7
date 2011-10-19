@@ -4,3 +4,8 @@
 z-index: 1001;
 }
 
+.content label
+{
+	float:left;
+	padding: 0 5px 0 0;
+}
