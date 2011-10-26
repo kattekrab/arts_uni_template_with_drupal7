@@ -82,7 +82,7 @@
 			<div class="aside col-2">
 				<?php if($page['main_menu']): ?>
 		  			<div class="nav first" role="navigation">
-						<?php print render($page['main_menu']); ?>
+						<?php print render($main_menu_expanded); ?>
 					</div>
 				<?php endif; ?>
 			</div>

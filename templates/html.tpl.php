@@ -51,9 +51,11 @@
 	
 	<!-- GLOBAL RESOURCES -->
 	<!-- DO NOT CHANGE -->  
-	<link rel="stylesheet" href="http://brand.unimelb.edu.au/web-templates/EDGE/css/complete.css">  
-	<script src="http://brand.unimelb.edu.au/web-templates/EDGE/js/complete.js"></script>
-	<script src="http://brand.unimelb.edu.au/global-header/js/injection.js"></script>
+	<link rel="stylesheet" href="http://brand.unimelb.edu.au/web-templates/1-1-0/css/complete.css">
+    <script src="http://brand.unimelb.edu.au/web-templates/1-1-0/js/complete.js"></script>
+
+    <link rel="stylesheet" href="http://brand.unimelb.edu.au/global-header/css/style.css">
+    <script src="http://brand.unimelb.edu.au/global-header/js/injection.js"></script>
 	<!-- /GLOBAL RESOURCES -->
 	
 	<?php 
