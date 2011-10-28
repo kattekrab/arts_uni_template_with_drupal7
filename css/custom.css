@@ -4,7 +4,15 @@
 z-index: 1001;
 }
 
-.content label
+label[for=edit-name]
+
+{
+	float:left;
+	padding: 0 5px 0 0;
+}
+
+
+label[for=edit-pass]
 {
 	float:left;
 	padding: 0 5px 0 0;

@@ -38,9 +38,7 @@
 		<!-- End admin or user login page -->
 		
 	<?php elseif($part_url == "user"): ?>
-	
 		<?php print render($page['content']); ?>
-	
 	<?php elseif($is_front): ?>	
 		
 		<!-- Start home page -->
@@ -66,16 +64,10 @@
 		<!-- Start normal page -->
 		<?php if($page['content']): ?>	
 			<div class="main col-6" id="main-content" role="main">
-				<?php print render($title_prefix); ?>
-			
-				<?php if ($title): ?>
-					<h1 class="title" id="page-title"><?php print $title; ?></h1>
+				<?php if($title): ?>
+					<h1><?php print $title; ?></h1>
 				<?php endif; ?>
-			
-				<?php print render($title_suffix); ?>
-			
-				<?php print $messages; ?>
-			
+
 				<?php print render($page['content']); ?>
 			</div>
 			

@@ -1,0 +1,16 @@
+name = unitheme
+description = unitheme
+package = Core
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = style.css
+
+regions[homepage1]     	= homepage1
+regions[homepage2]     	= homepage2
+regions[dropdown]     	= dropdown
+regions[help]           = help
+regions[search]			= search
+regions[login]			= login
+regions[content]        = content
+regions[main_menu]		= main_menu
+regions[aside]  		= aside
