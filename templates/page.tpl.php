@@ -79,10 +79,6 @@
 				<?php endif; ?>
 			</div>
 		<?php endif; ?>
-		
-		
-		
-		
 		<!-- End normal page -->
 		
 	<?php endif; ?>	
